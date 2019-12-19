@@ -34,7 +34,7 @@ def vote(request, question_id):
     except (KeyError, Choice.DoesNotExist):
         return render(
             request,
-            'polls/detail.hrml',
+            'polls/detail.html',
             {
                 'question': question,
                 'error_message': 'You did not select a valid choice',
